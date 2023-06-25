@@ -6,10 +6,17 @@
     }
 
     nav .navbar .image {
-        margin-left: 10px;
+        margin-left: 20px;
     }
 
     nav .selected {
+        display: flex;
+        // flex-direction: column;
+        // row-gap: 12px;
+        // background-color: $black;
+    }
+
+    #mobile-navbar.open {
         display: flex;
     }
 }

@@ -1,6 +1,14 @@
 "use strict"
 
 //Navbar
+var burgerMenu = document.getElementById("burger-menu")
+var mobileNavbar = document.getElementById("mobile-navbar")
+
+burgerMenu.addEventListener('click', function() {
+    this.classList.toggle("open-menu");
+    mobileNavbar.classList.toggle("open")
+    // overlay.classList.toggle("overlay");
+  });
 
 
 

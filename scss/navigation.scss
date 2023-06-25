@@ -5,6 +5,13 @@ nav {
     position: fixed;
     display: flex;
     justify-content: center;
+    z-index: 2;
+
+    // Desktop
+
+    #desktop-navbar {
+        z-index: 2;
+    }
 
     .navbar {
         width: 1400px;
@@ -20,8 +27,6 @@ nav {
             height: 52.06px;
             margin-left: 147.04px;
         }
-
-        // Desktop
 
         .links {
             margin-right: 148px;
@@ -55,7 +60,7 @@ nav {
                     background: $orange;
                     transition: 0.5s;
                 }
-                
+
                 &:hover::after {
                     left: 0%;
                 }
@@ -65,24 +70,52 @@ nav {
 
     //Mobile
 
-    .selected.hamburger-lines {
+        .selected {
+            display: none;
+            background: transparent;
+            margin-right: 20px;
+            border: none;
+            height: 30px;
+            width: 35px;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
 
-    }
-    
-    .selected,
-    .mobile-navbar {
-        display: none;
-    }
-
-    .selected {
-        background: white;
-        margin-right: 10px;
-        border: none;
-        height: 30px;
-        width: 50px;
-
-        .line {
-            width: ;
+            .line {
+                width: 35px;
+                height: 3px;
+                background-color: white;
+                border-radius: 10px;
+                transition: 0.3s ease-in-out;
+            }
         }
+
+        .selected.open-menu {
+            .line {
+                &:nth-of-type(1) {
+                    transform: rotate(45deg) translate(0, 100%);
+                    top: -10px;
+                    width: 35px;
+                }
+
+                &:nth-of-type(2) {
+                    opacity: 0;
+                }
+
+                &:nth-of-type(3) {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+
+        #mobile-navbar {
+            display: none;
+            position: absolute;
+            height: 100vh;
+            width: 50vw;
+            top: 0;
+            right: 0;
+            padding-top: 72px;
+            background-color: $black;
     }
 }
