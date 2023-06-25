@@ -1,0 +1,88 @@
+nav {
+    width: 100%;
+    background-color: $black;
+    height: 72px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+
+    .navbar {
+        width: 1400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+
+        .image {
+            background: url(../images/cheshire-county-hygiene-services.png);
+            width: 119.37px;
+            height: 52.06px;
+            margin-left: 147.04px;
+        }
+
+        // Desktop
+
+        .links {
+            margin-right: 148px;
+            display: flex;
+            flex-direction: row;
+            column-gap: 35px;
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-weight: regular;
+                opacity: 69%;
+                line-height: 72px;
+                position: relative;
+                overflow: hidden;
+                display: inline-block;
+                transition: 0.5s;
+
+                &:hover {
+                    opacity: 100%;
+                    cursor: pointer;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0%;
+                    left: -105%;
+                    height: 2px;
+                    width: 100%;
+                    background: $orange;
+                    transition: 0.5s;
+                }
+                
+                &:hover::after {
+                    left: 0%;
+                }
+            }
+        }
+    }
+
+    //Mobile
+
+    .selected.hamburger-lines {
+
+    }
+    
+    .selected,
+    .mobile-navbar {
+        display: none;
+    }
+
+    .selected {
+        background: white;
+        margin-right: 10px;
+        border: none;
+        height: 30px;
+        width: 50px;
+
+        .line {
+            width: ;
+        }
+    }
+}
