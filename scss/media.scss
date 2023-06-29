@@ -1,4 +1,4 @@
-// Navbar
+// NAVBAR
 
 /* Tablet */
 @media (min-width: 769px) and (max-width: 1000px) {
@@ -65,7 +65,7 @@
     }
 }
 
-//Hero section
+// HERO SECTION
 
 //Tablet
 
@@ -128,7 +128,7 @@
 
     #hero {
 
-        height: 950px;
+        height: 1000px;
 
         .heroframe {
             flex-direction: column;
@@ -181,3 +181,91 @@
         }
 
 }}
+
+//SOCIAL MEDIA
+
+//Tablet
+
+@media (min-width: 769px) and (max-width: 1000px) {
+
+    #socials {
+
+        height: auto;
+
+        .social-container {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+
+            .aboutsocial {
+                width: 100%;
+                text-align: center;
+                margin: 0;
+                margin-top: 15px;
+                margin-bottom: 30px;
+
+                h3 {
+                    text-align: center;
+                    margin-bottom: 15px;
+                }
+            }
+
+            .links {
+                margin: 0;
+                margin-bottom: 15px;
+            }
+
+
+        }
+
+    }
+}
+
+//Mobile
+
+@media (max-width: 768px) {
+    #socials {
+
+        height: auto;
+
+        .social-container {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+
+            .aboutsocial {
+                width: 100%;
+                text-align: center;
+                margin: 0;
+                margin-top: 15px;
+                margin-bottom: 30px;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+
+                h3 {
+                    text-align: center;
+                    margin-bottom: 15px;
+                }
+
+                p {
+                    width: 80%;
+                    padding: 0;
+                }
+            }
+
+            .links {
+                margin: 0;
+                margin-bottom: 15px;
+                flex-direction: row;
+                width: auto;
+                column-gap: 10px;
+            }
+
+
+        }
+
+    }
+}
