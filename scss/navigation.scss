@@ -4,18 +4,18 @@ nav {
     height: 72px;
     position: fixed;
     display: flex;
-    z-index: 1;
+    justify-content: center;
+    z-index: 3;
   
     // Desktop
   
     .navbar {
-      width: 100%;
+      width: 1400px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      padding-left: 147.04px;
-      padding-right: 148px;
+      padding: 0 148px 0 147px;
   
       .image {
         background: url(../images/cheshire-county-hygiene-services.png);
