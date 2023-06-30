@@ -7,6 +7,8 @@ var lastNameInput = document.getElementById("lastNameInput")
 var numberInput = document.getElementById("numberInput")
 var submitInput = document.getElementById("submitInput")
 
+var tabs = document.getElementsByClassName("content-section")
+var buttons = document.getElementsByClassName("tab-button")
 //Navbar
 
 burger.addEventListener("click", function() {
@@ -30,6 +32,33 @@ submitInput.addEventListener("click", function(){
     }
 )
 
+// Tabs
+
+function changeTab(event, name) {
+    if(event.currentTarget.classList.contains("selected")) return
+
+    // Nuimam visiems tabams block ir animate klases
+    for(var tab of tabs){
+        tab.classList.remove("block")
+        tab.classList.remove("animate")
+    }
+
+    //Prideda block klase
+    document.getElementById(name).classList.add("block")
+
+    //Mygtuku stilius
+    for(var button of buttons){
+        button.classList.remove("selected")
+    }
+
+    event.currentTarget.classList.add("selected")
+
+    // Animacija
+    setTimeout(function(){
+        document.getElementById(name).classList.add("animate")
+    }, 100)
+
+}
 
 
 

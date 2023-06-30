@@ -1,7 +1,7 @@
 // NAVBAR
 
 /* Tablet */
-@media (min-width: 769px) and (max-width: 1000px) {
+@media (min-width: 769px) and (max-width: 1200px) {
 
     nav .navbar {
         
@@ -69,7 +69,7 @@
 
 //Tablet
 
-@media (min-width: 769px) and (max-width: 1000px) {
+@media (min-width: 769px) and (max-width: 1200px) {
     #hero {
 
         height: 950px;
@@ -186,7 +186,7 @@
 
 //Tablet
 
-@media (min-width: 769px) and (max-width: 1000px) {
+@media (min-width: 769px) and (max-width: 1200px) {
 
     #socials {
 
@@ -261,7 +261,7 @@
                 margin-bottom: 15px;
                 flex-direction: row;
                 width: auto;
-                column-gap: 10px;
+                column-gap: 20px;
             }
 
 
@@ -269,3 +269,215 @@
 
     }
 }
+
+//TABS 
+
+@media (max-width: 1350px) {
+    #tabs {
+        .tabcontent {
+            padding: 0 30px;
+        }
+    }
+}
+
+//Tablet
+
+@media (min-width: 769px) and (max-width: 1200px) {
+
+    #tabs {
+
+        min-height: 700px;
+
+        .tabcontent {
+            flex-direction: column;
+            row-gap: 30px;
+            padding: 50px 40px;
+
+            .buttons {
+                flex-direction: row;
+                column-gap: 20px;
+
+            }
+
+            .content-section {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .tabtext {
+                    width: 100%;
+                    display: flex;
+                    text-align: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                h2 {
+                    width: 80%;
+                }
+
+                .paragraphs {
+                    width: 100%;
+
+                    p {
+                        width: 100%;
+                    }
+                }
+
+                .images {
+                    margin-top: 33px;
+                    flex-direction: row;
+                    column-gap: 15px;
+
+                    .smaller-images {
+                        column-gap: 15px;
+                    }
+
+                    .bigger-image-container {
+                        width: 168px;
+                        height: 168px;
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+//Phone
+
+@media (max-width: 768px) {
+
+    #tabs {
+
+        min-height: 1300px;
+
+        .tabcontent {
+            width: 100%;
+            flex-direction: column;
+            row-gap: 30px;
+            padding: 50px 40px;
+
+            .buttons {
+                flex-direction: row;
+                column-gap: 10px;
+
+            }
+
+            .content-section {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .tabtext {
+                    width: 100%;
+                    display: flex;
+                    text-align: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    h2 {
+                        font-size: 27px;
+                    }
+                }
+
+                .paragraphs {
+                    width: 100%;
+
+                    p {
+                        width: 100%;
+                    }
+                }
+
+                .images {
+                    margin-top: 33px;
+                    flex-direction: column;
+                    row-gap: 15px;
+
+                    .smaller-images {
+                        row-gap: 15px;
+                        flex-direction: column;
+
+                        .smaller-image-container {
+                            width: 400px;
+                        }
+                    }
+
+
+                    .bigger-image-container {
+                        width: 400px;
+                        height: 168px;
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+@media (max-width: 480px) {
+    
+    #tabs {
+        min-height: 1300px;
+
+        .tabcontent {
+            padding: 10px 10px;
+
+            .buttons {
+                flex-direction: row;
+                column-gap: 15px;
+                
+                button {
+                    width: 80px;
+                    height: 80px;
+                }
+
+            }
+
+            .content-section {
+
+                .paragraphs {
+                    width: 100%;
+                    margin: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    h2 {
+                        width: 100%;
+                    }
+
+                    p {
+                        width: 90%;
+                    }
+                }
+
+            .images {
+
+                .smaller-images {
+                    row-gap: 15px;
+                    flex-direction: column;
+
+                    .smaller-image-container {
+                        width: 168px;
+                    }
+                }
+
+                .bigger-image-container {
+                    width: 168px;
+                    height: 168px;
+                }
+            }
+
+            }
+    }
+
+
+
+}
+}
+
