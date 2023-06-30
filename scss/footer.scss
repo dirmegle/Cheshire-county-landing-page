@@ -1,0 +1,60 @@
+#footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 124px;
+    background: $black;
+
+    .footer-content {
+        width: 100%;
+        max-width: 1400px;
+        padding: 0 148px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .links {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 50%;
+
+
+            i{
+                font-size: 20px;
+                text-decoration: none;
+                color: $orange;
+                opacity: 100%;
+                transition: 0.3s ease-in-out;
+
+                &:hover {
+                    color: $green;
+                }
+
+                &.fa-solid {
+                    transform: rotate(45deg) translate(0, 15%);
+                    vertical-align: bottom;
+
+                    &:hover {
+                        transform: rotate(45deg) translate(0, 15%) scale(1.2);
+                    }
+                }
+
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+        p {
+            font-weight: 400;
+            color: white;
+            opacity: 50%;
+            line-height: 14px;
+            font-size: 18px;
+        }
+    }
+}
