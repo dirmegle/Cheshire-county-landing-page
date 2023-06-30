@@ -481,3 +481,43 @@
 }
 }
 
+//ABOUT
+
+//Tablet
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    #about {
+        min-height: 400px;
+
+        .about-container {
+            flex-direction: column;
+            padding: 0;
+            align-items: center;
+            justify-content: center;
+
+            .logo {
+                display: none;
+            }
+        }
+    }
+}
+//Phone 
+
+@media (max-width: 768px) {
+    #about {
+        
+        height: 670px;
+
+        .about-container {
+            flex-direction: column;
+            padding: 0;
+            align-items: center;
+            padding: 15px 15px;
+
+            .logo {
+                display: none;
+            }
+        }
+    }
+}
+
