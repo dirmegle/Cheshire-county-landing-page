@@ -521,3 +521,45 @@
     }
 }
 
+//FEATURES
+
+//Tablet
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    #features {
+
+        .features-content {
+
+            .benefits-container-overall {
+                column-gap: 20px;
+
+                .benefits-container {
+
+                    max-width: 200px;
+                }
+            }
+        }
+    }
+}
+
+//Mobile
+
+@media (max-width: 768px) {
+    #features {
+
+        height: 1000px;
+
+        .features-content {
+
+            .benefits-container-overall {
+                flex-direction: column;
+                row-gap: 40px;
+
+                .benefits-container {
+
+                    max-width: 200px;
+                }
+            }
+        }
+    }
+}
