@@ -481,12 +481,12 @@
 }
 }
 
-//ABOUT
+//FEATURES
 
 //Tablet
 
 @media (min-width: 769px) and (max-width: 1200px) {
-    #about {
+    #features {
         min-height: 400px;
 
         .about-container {
@@ -515,7 +515,7 @@
 //Phone 
 
 @media (max-width: 768px) {
-    #about {
+    #features {
         
         height: 670px;
 
@@ -544,12 +544,12 @@
     }
 }
 
-//FEATURES
+//ABOUT
 
 //Tablet
 
 @media (min-width: 769px) and (max-width: 1200px) {
-    #features {
+    #about {
 
         .features-content {
 
@@ -568,7 +568,7 @@
 //Mobile
 
 @media (max-width: 768px) {
-    #features {
+    #about {
 
         height: 1400px;
 

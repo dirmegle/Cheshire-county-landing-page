@@ -1,84 +1,77 @@
 #about {
     width: 100%;
-    height: 596px;
-    background: $black;
+    height: 592px;
     display: flex;
     justify-content: center;
+    align-items: center;
 
-    .about-container {
-        width: 1400px;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 148px;
+    .features-content {
+        @include container;
 
-        .logo {
-            background: url(../images/cheshire-county-hygiene-services-bigger.png);
-            background-size: cover;
-            width: 388.58px;
-            height: 169.47px;
+        h2 {
+            @include headline-style;
+        }
+        
+        h2 {
+            color: #212121;
+            margin-bottom: 22px;
         }
 
-        .about-content {
+        .divider {
+            width: 64px;
+            height: 2px;
+            line-height: 43px;
+            background: $orange;
+            border-radius: 2px;
+            margin-bottom: 27px;
+            font-weight: 600;
+        }
 
-            h2 {
-                font-size: 30px;
-                line-height: 43px;
-                font-weight: 600;
-                color: white;
-                max-width: 314px;
-                margin-bottom: 27px;
-            }
+        p {
+            color: $fontgrey;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+        }
 
-            .divider {
-                width: 200px;
-                height: 2px;
-                background: $orange;
-                border-radius: 2px;
-                margin-bottom: 24px;
-                margin-bottom: 27px;
-            }
+        .benefits-container-overall {
+            display: flex;
+            flex-direction: row;
+            margin-top: 65px;
+            column-gap: 97px;
 
-            p {
-                color: white;
-                font-size: 14px;
-                line-height: 20px;
-                margin-bottom: 43px;
-                max-width: 451px;
-                
-            }
-
-            .features {
+            .benefits-container {
                 display: flex;
-                flex-direction: row;
-                column-gap: 17px;
+                flex-direction: column;
+                align-items: center;
+                max-width: 290px;
 
                 .icon {
-                    height: 50px;
                     width: 50px;
+                    height: 50px;
                     border-radius: 50px;
-                    background-color: $orange;
+                    border: 1px solid $orange;
+                    background: transparent;
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    margin-bottom: 35px;
 
                     i {
-                        color: white;
-                        font-size: 1.4em;
+                        color: $orange;
+                        font-size: 1.3em;
                     }
                 }
 
-                h4 {
-                    color: white;
-                    font-size: 14px;
-                    font-weight: 600;
-                    line-height: 20px;
+                h3 {
+                    font-size: 20px;
+                    line-height: 24px;
+                    margin-bottom: 27px;
+                    font-weight: 400;
                 }
 
                 p {
-                    max-width: 400px;
+                    text-align: center;
                 }
             }
         }
