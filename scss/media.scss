@@ -570,7 +570,7 @@
 @media (max-width: 768px) {
     #features {
 
-        height: 1000px;
+        height: 1400px;
 
         .features-content {
 
@@ -581,6 +581,10 @@
                 .benefits-container {
 
                     max-width: 200px;
+
+                    h3 {
+                        text-align: center;
+                    }
                 }
             }
         }
@@ -609,7 +613,7 @@
 @media (max-width: 768px) {
     #prices {
 
-        height: 1850px;
+        height: 2000px;
 
         .prices-content {
 
