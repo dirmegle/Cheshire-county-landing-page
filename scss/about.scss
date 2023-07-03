@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
 
-    .features-content {
+    .about-content {
         @include container;
 
         h2 {
@@ -68,6 +68,7 @@
                     line-height: 24px;
                     margin-bottom: 27px;
                     font-weight: 400;
+                    text-align: center;
                 }
 
                 p {

@@ -551,14 +551,25 @@
 @media (min-width: 769px) and (max-width: 1200px) {
     #about {
 
-        .features-content {
+        .about-content {
+            width: 100%;
+            padding: 0 50px;
+
 
             .benefits-container-overall {
-                column-gap: 20px;
+                column-gap: 30px;
 
                 .benefits-container {
 
-                    max-width: 200px;
+                    width: 200px;
+
+                    h3 {
+                        text-align: center;
+                    }
+    
+                    p {
+                        text-align: center;
+                    }
                 }
             }
         }
@@ -570,9 +581,12 @@
 @media (max-width: 768px) {
     #about {
 
-        height: 1400px;
+        height: 1200px;
 
-        .features-content {
+        .about-content {
+
+            width: 100%;
+            padding: 0 50px;
 
             .benefits-container-overall {
                 flex-direction: column;
@@ -598,6 +612,9 @@
 
         .prices-content {
 
+            width: 100%;
+            padding: 0 50px;
+
             .price-container-overall {
 
                 column-gap: 15px;
@@ -616,6 +633,9 @@
         height: 2000px;
 
         .prices-content {
+
+            width: 100%;
+            padding: 0 50px;
 
             .price-container-overall {
 
