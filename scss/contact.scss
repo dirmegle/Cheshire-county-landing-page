@@ -8,20 +8,14 @@
     justify-content: center;
 
     .contact-content {
-        max-width: 1400px;
-        width: 100%;
-        padding: 0 148px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include container;
 
         h2 {
+            @include headline-style;
+        }
+        
+        h2 {
             color: white;
-            font-size: 36px;
-            text-align: center;
-            font-weight: 600;
-            line-height: 43px;
             margin-bottom: 50px;
 
         }
@@ -69,57 +63,7 @@
             }
 
             .radio-buttons {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                column-gap: 17.07px;
-
-                div{
-                    display: flex;
-                    align-items: center;
-
-                    label {
-                        font-size: 9px;
-                        font-weight: 700;
-                        opacity: 50%;
-                        text-transform: uppercase;
-                        color: black;
-                    }
-
-                    input[type="radio"]{
-                        appearance: none;
-                        width: 12.71px;
-                        height: 12.71px;
-                        border-radius: 12.71px;
-                        border: 1px solid $green;
-                        margin-right: 5px;
-                        position: relative;
-
-                        &::before {
-                            content: "";
-                            position: absolute;
-                            width: 70%;
-                            height: 70%;
-                            background: $green;
-                            border-radius: 100%;
-                            top: 0;
-                            left: 0;
-                            bottom: 0;
-                            right: 0;
-                            margin: auto;
-                            transform: scale(0);
-                            transition: 0.3s;
-                        }
-                        
-                        &:checked::before {
-                            transform: scale(1);
-                        }
-
-                        &:checked + label {
-                            opacity: 100%;
-                        }
-                    }
-                }
+                @include radio-buttons;
             }
 
             .button {
