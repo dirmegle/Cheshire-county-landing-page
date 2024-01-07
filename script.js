@@ -22,12 +22,10 @@ burger.addEventListener("click", function() {
     burger.classList.toggle("close")
 })
 
-//Hero section form
 
 submitInput.addEventListener("click", function(){
     if(nameInput.value && lastNameInput.value && numberInput.value) {
 
-    //Ištrina laukelius paspaudus mygtuką, jei neužpildyti - išmeta žinutę
     nameInput.value = "";
     lastNameInput.value = "";
     numberInput.value = "";
@@ -43,35 +41,28 @@ submitInput.addEventListener("click", function(){
 function changeTab(event, name) {
     if(event.currentTarget.classList.contains("selected")) return
 
-    // Nuimam visiems tabams block ir animate klases
     for(var tab of tabs){
         tab.classList.remove("block")
         tab.classList.remove("animate")
     }
 
-    //Prideda block klase
     document.getElementById(name).classList.add("block")
 
-    //Mygtuku stilius
     for(var button of buttons){
         button.classList.remove("selected")
     }
 
     event.currentTarget.classList.add("selected")
 
-    // Animacija
     setTimeout(function(){
         document.getElementById(name).classList.add("animate")
     }, 100)
 
 }
 
-// Contact sekcija
-
 submitContact.addEventListener("click", function(event){
     if(nameContact.value && lastNameContact.value && numberContact.value) {
 
-    //Ištrina laukelius paspaudus mygtuką, jei neužpildyti - išmeta žinutę
     nameContact.value = "";
     lastNameContact.value = "";
     numberContact.value = "";
